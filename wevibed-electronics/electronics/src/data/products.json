@@ -1,0 +1,331 @@
+{
+  "items": [
+    {
+      "id": "nova-x5",
+      "name": "Nova X5 Smartphone",
+      "brand": "Nova",
+      "model": "X5-128",
+      "category": "Phones",
+      "price": 219,
+      "availability": "in",
+      "tint": 0,
+      "image": "",
+      "specs": [
+        {
+          "label": "Screen",
+          "value": "6.5 in AMOLED"
+        },
+        {
+          "label": "Memory",
+          "value": "6 GB RAM"
+        },
+        {
+          "label": "Storage",
+          "value": "128 GB"
+        },
+        {
+          "label": "Battery",
+          "value": "5000 mAh"
+        },
+        {
+          "label": "Camera",
+          "value": "50 MP main"
+        }
+      ],
+      "warranty": "12 months",
+      "related": [
+        "nova-case",
+        "volt-charger"
+      ]
+    },
+    {
+      "id": "pixio-a2",
+      "name": "Pixio A2 Smartphone",
+      "brand": "Pixio",
+      "model": "A2-64",
+      "category": "Phones",
+      "price": 129,
+      "availability": "low",
+      "tint": 1,
+      "image": "",
+      "specs": [
+        {
+          "label": "Screen",
+          "value": "6.1 in LCD"
+        },
+        {
+          "label": "Memory",
+          "value": "4 GB RAM"
+        },
+        {
+          "label": "Storage",
+          "value": "64 GB"
+        },
+        {
+          "label": "Battery",
+          "value": "4500 mAh"
+        },
+        {
+          "label": "Camera",
+          "value": "13 MP main"
+        }
+      ],
+      "warranty": "12 months",
+      "related": [
+        "nova-case",
+        "volt-charger"
+      ]
+    },
+    {
+      "id": "kora-book14",
+      "name": "Kora Book 14 Laptop",
+      "brand": "Kora",
+      "model": "KB14-i5",
+      "category": "Laptops",
+      "price": 549,
+      "availability": "in",
+      "tint": 2,
+      "image": "",
+      "specs": [
+        {
+          "label": "Screen",
+          "value": "14 in FHD"
+        },
+        {
+          "label": "Processor",
+          "value": "Quad-core i5 class"
+        },
+        {
+          "label": "Memory",
+          "value": "8 GB RAM"
+        },
+        {
+          "label": "Storage",
+          "value": "512 GB SSD"
+        },
+        {
+          "label": "Battery",
+          "value": "Up to 9 hours"
+        }
+      ],
+      "warranty": "12 months",
+      "related": [
+        "kora-bag",
+        "volt-charger"
+      ]
+    },
+    {
+      "id": "kora-book15",
+      "name": "Kora Book 15 Laptop",
+      "brand": "Kora",
+      "model": "KB15-i3",
+      "category": "Laptops",
+      "price": 399,
+      "availability": "enq",
+      "tint": 2,
+      "image": "",
+      "specs": [
+        {
+          "label": "Screen",
+          "value": "15.6 in HD"
+        },
+        {
+          "label": "Processor",
+          "value": "Dual-core i3 class"
+        },
+        {
+          "label": "Memory",
+          "value": "8 GB RAM"
+        },
+        {
+          "label": "Storage",
+          "value": "256 GB SSD"
+        },
+        {
+          "label": "Battery",
+          "value": "Up to 7 hours"
+        }
+      ],
+      "warranty": "12 months",
+      "related": [
+        "kora-bag"
+      ]
+    },
+    {
+      "id": "volt-charger",
+      "name": "Volt 33W Fast Charger",
+      "brand": "Volt",
+      "model": "VC-33",
+      "category": "Accessories",
+      "price": 15,
+      "availability": "in",
+      "tint": 1,
+      "image": "",
+      "specs": [
+        {
+          "label": "Output",
+          "value": "33 W"
+        },
+        {
+          "label": "Ports",
+          "value": "USB-C"
+        },
+        {
+          "label": "Cable",
+          "value": "1 m included"
+        }
+      ],
+      "warranty": "6 months",
+      "related": [
+        "nova-case"
+      ]
+    },
+    {
+      "id": "nova-case",
+      "name": "Nova X5 Protective Case",
+      "brand": "Nova",
+      "model": "NC-X5",
+      "category": "Accessories",
+      "price": 8,
+      "availability": "in",
+      "tint": 0,
+      "image": "",
+      "specs": [
+        {
+          "label": "Fits",
+          "value": "Nova X5"
+        },
+        {
+          "label": "Material",
+          "value": "TPU"
+        },
+        {
+          "label": "Finish",
+          "value": "Clear"
+        }
+      ],
+      "warranty": "None",
+      "related": [
+        "volt-charger"
+      ]
+    },
+    {
+      "id": "kora-bag",
+      "name": "Kora Laptop Backpack",
+      "brand": "Kora",
+      "model": "KBP-15",
+      "category": "Accessories",
+      "price": 22,
+      "availability": "low",
+      "tint": 2,
+      "image": "",
+      "specs": [
+        {
+          "label": "Fits",
+          "value": "Up to 15.6 in"
+        },
+        {
+          "label": "Material",
+          "value": "Water-resistant nylon"
+        },
+        {
+          "label": "Pockets",
+          "value": "3"
+        }
+      ],
+      "warranty": "3 months",
+      "related": [
+        "kora-book14",
+        "kora-book15"
+      ]
+    },
+    {
+      "id": "veltra-buds",
+      "name": "Veltra Wireless Earbuds",
+      "brand": "Veltra",
+      "model": "VB-200",
+      "category": "Audio",
+      "price": 29,
+      "availability": "in",
+      "tint": 3,
+      "image": "",
+      "specs": [
+        {
+          "label": "Battery",
+          "value": "24 h with case"
+        },
+        {
+          "label": "Connection",
+          "value": "Bluetooth 5.3"
+        },
+        {
+          "label": "Water rating",
+          "value": "IPX4"
+        }
+      ],
+      "warranty": "6 months",
+      "related": [
+        "veltra-speaker",
+        "volt-charger"
+      ]
+    },
+    {
+      "id": "veltra-speaker",
+      "name": "Veltra Portable Speaker",
+      "brand": "Veltra",
+      "model": "VS-10",
+      "category": "Audio",
+      "price": 35,
+      "availability": "out",
+      "tint": 4,
+      "image": "",
+      "specs": [
+        {
+          "label": "Battery",
+          "value": "12 h"
+        },
+        {
+          "label": "Connection",
+          "value": "Bluetooth 5.0"
+        },
+        {
+          "label": "Water rating",
+          "value": "IPX5"
+        }
+      ],
+      "warranty": "6 months",
+      "related": [
+        "veltra-buds"
+      ]
+    },
+    {
+      "id": "pixio-tv43",
+      "name": "Pixio 43 in Smart TV",
+      "brand": "Pixio",
+      "model": "PT43-S",
+      "category": "TVs",
+      "price": 289,
+      "availability": "enq",
+      "tint": 5,
+      "image": "",
+      "specs": [
+        {
+          "label": "Screen",
+          "value": "43 in 4K"
+        },
+        {
+          "label": "Smart apps",
+          "value": "Streaming apps built in"
+        },
+        {
+          "label": "Ports",
+          "value": "3 HDMI, 2 USB"
+        }
+      ],
+      "warranty": "12 months",
+      "related": [
+        "veltra-speaker"
+      ]
+    }
+  ]
+}

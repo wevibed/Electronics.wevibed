@@ -1,0 +1,88 @@
+{
+  "status": "demo",
+  "business": {
+    "name": "Sample Tech Hub",
+    "shortName": "Sample Tech Hub",
+    "tagline": "Phones, laptops and gadgets in Harare",
+    "description": "Sample electronics shop: compare phones, laptops and accessories side by side, check stock, and ask on WhatsApp. Demo layout only.",
+    "currencySymbol": "$",
+    "sampleNote": "Sample business. Brands, models, specs and prices are placeholders for demonstration."
+  },
+  "contact": {
+    "whatsapp": "263770000000",
+    "displayNumber": "[CLIENT NUMBER]",
+    "address": "[SHOP NAME], [MALL OR STREET ADDRESS], Harare",
+    "hours": "[OPEN] to [CLOSE]"
+  },
+  "brand": {
+    "accent": "#FF8A00",
+    "fontsUrl": "https://fonts.googleapis.com/css2?family=Sora:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap",
+    "logo": ""
+  },
+  "seo": {
+    "domain": "sample-tech-hub.pages.dev",
+    "ogImage": ""
+  },
+  "hero": {
+    "image": "",
+    "imageAlt": "",
+    "eyebrow": "Phones / Laptops / Accessories",
+    "headline": "Know the model, the specs and the price before you visit.",
+    "subheadline": "Compare up to three products side by side, check what is in stock, and ask a question on WhatsApp.",
+    "primaryCta": "Browse products",
+    "secondaryCta": "Warranty info"
+  },
+  "nav": {
+    "links": [
+      { "label": "Shop", "href": "#shop" },
+      { "label": "Warranty", "href": "#why" },
+      { "label": "Find us", "href": "#visit" }
+    ],
+    "cta": "Ask on WhatsApp",
+    "message": "Hi Sample Tech Hub, I saw your website and have a question."
+  },
+  "shop": {
+    "heading": "All products",
+    "searchLabel": "Search products",
+    "searchPlaceholder": "Search phone, laptop, charger, model number",
+    "brandLabel": "Brand",
+    "categories": ["Phones", "Laptops", "Accessories", "Audio", "TVs"],
+    "allLabel": "All",
+    "countOne": "product",
+    "countMany": "products",
+    "empty": "No match. Try a model number or ask us on WhatsApp if we can source it.",
+    "photoLabel": "Product photo",
+    "addCompare": "Add to compare",
+    "addedCompare": "Added to compare",
+    "compareSelected": "selected to compare",
+    "compareNow": "Compare now",
+    "clear": "Clear",
+    "compareTitle": "Compare",
+    "specWarranty": "Warranty",
+    "specAvailability": "Availability",
+    "orderCta": "Check availability on WhatsApp",
+    "relatedLabel": "Goes well with",
+    "orderMessage": "Hi {shop}, is the {name} ({model}) available? Listed at {price}.",
+    "priceSuffix": " (sample)",
+    "noPrice": "Ask for price"
+  },
+  "availability": {
+    "in": "In stock",
+    "low": "Low stock",
+    "out": "Sold out",
+    "enq": "Ask availability"
+  },
+  "highlights": [
+    { "title": "Warranty on every item", "text": "[WARRANTY TERMS, for example 12 months on phones, 6 months on accessories]" },
+    { "title": "Check before you come", "text": "Stock labels show what is on the shelf. Message us to hold an item for collection." },
+    { "title": "After-sales help", "text": "[REPAIRS, SCREEN REPLACEMENT AND SETUP SERVICES OFFERED]" }
+  ],
+  "visit": {
+    "heading": "Find the shop",
+    "hoursLabel": "Hours",
+    "whatsappLabel": "WhatsApp"
+  },
+  "footer": {
+    "credit": "Built by WeVibed"
+  }
+}
