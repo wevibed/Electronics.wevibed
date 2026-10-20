@@ -24,8 +24,8 @@
     "ogImage": ""
   },
   "hero": {
-    "image": "",
-    "imageAlt": "",
+    "image": "https://images.unsplash.com/photo-1498049794561-7780e7231661?auto=format&fit=crop&w=1800&q=85",
+    "imageAlt": "Electronics and technology products displayed in a modern store",
     "eyebrow": "Phones / Laptops / Accessories",
     "headline": "Know the model, the specs and the price before you visit.",
     "subheadline": "Compare up to three products side by side, check what is in stock, and ask a question on WhatsApp.",
@@ -34,9 +34,18 @@
   },
   "nav": {
     "links": [
-      { "label": "Shop", "href": "#shop" },
-      { "label": "Warranty", "href": "#why" },
-      { "label": "Find us", "href": "#visit" }
+      {
+        "label": "Shop",
+        "href": "#shop"
+      },
+      {
+        "label": "Warranty",
+        "href": "#why"
+      },
+      {
+        "label": "Find us",
+        "href": "#visit"
+      }
     ],
     "cta": "Ask on WhatsApp",
     "message": "Hi Sample Tech Hub, I saw your website and have a question."
@@ -46,7 +55,13 @@
     "searchLabel": "Search products",
     "searchPlaceholder": "Search phone, laptop, charger, model number",
     "brandLabel": "Brand",
-    "categories": ["Phones", "Laptops", "Accessories", "Audio", "TVs"],
+    "categories": [
+      "Phones",
+      "Laptops",
+      "Accessories",
+      "Audio",
+      "TVs"
+    ],
     "allLabel": "All",
     "countOne": "product",
     "countMany": "products",
@@ -73,9 +88,18 @@
     "enq": "Ask availability"
   },
   "highlights": [
-    { "title": "Warranty on every item", "text": "[WARRANTY TERMS, for example 12 months on phones, 6 months on accessories]" },
-    { "title": "Check before you come", "text": "Stock labels show what is on the shelf. Message us to hold an item for collection." },
-    { "title": "After-sales help", "text": "[REPAIRS, SCREEN REPLACEMENT AND SETUP SERVICES OFFERED]" }
+    {
+      "title": "Warranty on every item",
+      "text": "[WARRANTY TERMS, for example 12 months on phones, 6 months on accessories]"
+    },
+    {
+      "title": "Check before you come",
+      "text": "Stock labels show what is on the shelf. Message us to hold an item for collection."
+    },
+    {
+      "title": "After-sales help",
+      "text": "[REPAIRS, SCREEN REPLACEMENT AND SETUP SERVICES OFFERED]"
+    }
   ],
   "visit": {
     "heading": "Find the shop",

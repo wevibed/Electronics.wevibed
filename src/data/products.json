@@ -9,7 +9,7 @@
       "price": 219,
       "availability": "in",
       "tint": 0,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Screen",
@@ -47,7 +47,7 @@
       "price": 129,
       "availability": "low",
       "tint": 1,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1511701639810-1c1a4f7f5b1f?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Screen",
@@ -85,7 +85,7 @@
       "price": 549,
       "availability": "in",
       "tint": 2,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Screen",
@@ -123,7 +123,7 @@
       "price": 399,
       "availability": "enq",
       "tint": 2,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Screen",
@@ -160,7 +160,7 @@
       "price": 15,
       "availability": "in",
       "tint": 1,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Output",
@@ -189,7 +189,7 @@
       "price": 8,
       "availability": "in",
       "tint": 0,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1601593346740-925612772716?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Fits",
@@ -218,7 +218,7 @@
       "price": 22,
       "availability": "low",
       "tint": 2,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Fits",
@@ -248,7 +248,7 @@
       "price": 29,
       "availability": "in",
       "tint": 3,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Battery",
@@ -278,7 +278,7 @@
       "price": 35,
       "availability": "out",
       "tint": 4,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Battery",
@@ -307,7 +307,7 @@
       "price": 289,
       "availability": "enq",
       "tint": 5,
-      "image": "",
+      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=900&q=82",
       "specs": [
         {
           "label": "Screen",
