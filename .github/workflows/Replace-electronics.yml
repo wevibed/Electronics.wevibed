@@ -17,28 +17,43 @@ jobs:
 
       - name: Download website ZIP
         env:
-          ZIP_URL: https://github.com/OWNER/REPO/releases/download/v1.0/wevibed-electronics-cloudflare-pages.zip
+          ZIP_URL: https://github.com/wevibed/Electronics.wevibed/releases/download/v1.0/wevibed-electronics-cloudflare.zip
         run: |
-          curl -fL "$ZIP_URL" -o website.zip
+          set -e
+          curl -fL "$ZIP_URL" -o /tmp/website.zip
+          unzip -t /tmp/website.zip
 
       - name: Extract website
         run: |
-          mkdir -p extracted
-          unzip -oq website.zip -d extracted
+          set -e
 
-          # Copy extracted project files into the repository root.
-          cp -a extracted/. .
+          mkdir -p /tmp/electronics-site
+          unzip -oq /tmp/website.zip -d /tmp/electronics-site
 
-          rm -rf extracted website.zip
+          # Preserve GitHub Actions workflows.
+          # Replace the website files with the extracted project.
+          find . -mindepth 1 -maxdepth 1 \
+            ! -name ".git" \
+            ! -name ".github" \
+            -exec rm -rf {} +
+
+          cp -a /tmp/electronics-site/. .
+
+          # Keep the repository's existing workflow files.
+          git status --short
 
       - name: Commit extracted website
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
+
           if ! git diff --cached --quiet; then
-            git commit -m "Extract electronics website"
+            git commit -m "Update electronics website"
             git push
           else
             echo "No changes to commit."
