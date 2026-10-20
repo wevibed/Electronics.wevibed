@@ -15,45 +15,55 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Download website ZIP
-        env:
-          ZIP_URL: https://github.com/wevibed/Electronics.wevibed/releases/download/v1.0/wevibed-electronics-cloudflare.zip
+      - name: Extract uploaded ZIP
         run: |
           set -e
-          curl -fL "$ZIP_URL" -o /tmp/website.zip
-          unzip -t /tmp/website.zip
 
-      - name: Extract website
-        run: |
-          set -e
+          ZIP_FILE="wevibed-electronics-cloudflare-pages.zip"
+
+          if [ ! -f "$ZIP_FILE" ]; then
+            echo "ERROR: $ZIP_FILE not found in repository root."
+            exit 1
+          fi
 
           mkdir -p /tmp/electronics-site
-          unzip -oq /tmp/website.zip -d /tmp/electronics-site
+          unzip -oq "$ZIP_FILE" -d /tmp/electronics-site
+          unzip -t "$ZIP_FILE"
 
-          # Preserve GitHub Actions workflows.
-          # Replace the website files with the extracted project.
+          # Detect whether the ZIP contains one enclosing project folder.
+          SOURCE="/tmp/electronics-site"
+          COUNT=$(find "$SOURCE" -mindepth 1 -maxdepth 1 | wc -l)
+
+          if [ "$COUNT" -eq 1 ] && [ -d "$(find "$SOURCE" -mindepth 1 -maxdepth 1 -type d)" ]; then
+            SOURCE="$(find "$SOURCE" -mindepth 1 -maxdepth 1 -type d)"
+          fi
+
+          # Remove old project files but preserve Git and workflow files.
           find . -mindepth 1 -maxdepth 1 \
             ! -name ".git" \
             ! -name ".github" \
             -exec rm -rf {} +
 
-          cp -a /tmp/electronics-site/. .
+          # Copy the new project into the repository root.
+          cp -a "$SOURCE"/. .
 
-          # Keep the repository's existing workflow files.
-          git status --short
+          # Remove the uploaded archive from the repository.
+          rm -f "$ZIP_FILE"
 
-      - name: Commit extracted website
+          echo "Website files extracted successfully."
+          ls -la
+
+      - name: Commit replacement
         run: |
           set -e
 
           git config user.name "github-actions[bot]"
-          git config user.email \
-            "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
           git add -A
 
           if ! git diff --cached --quiet; then
-            git commit -m "Update electronics website"
+            git commit -m "Replace electronics website with updated project"
             git push
           else
             echo "No changes to commit."
