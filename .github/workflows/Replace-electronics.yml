@@ -1,0 +1,45 @@
+
+name: Extract Electronics Website ZIP
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Download website ZIP
+        env:
+          ZIP_URL: https://github.com/OWNER/REPO/releases/download/v1.0/wevibed-electronics-cloudflare-pages.zip
+        run: |
+          curl -fL "$ZIP_URL" -o website.zip
+
+      - name: Extract website
+        run: |
+          mkdir -p extracted
+          unzip -oq website.zip -d extracted
+
+          # Copy extracted project files into the repository root.
+          cp -a extracted/. .
+
+          rm -rf extracted website.zip
+
+      - name: Commit extracted website
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Extract electronics website"
+            git push
+          else
+            echo "No changes to commit."
+          fi
